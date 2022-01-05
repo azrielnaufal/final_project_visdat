@@ -1,0 +1,1 @@
+web: gunicorn simple_stock_dashboard_with_bokeh:app --log-file - 
