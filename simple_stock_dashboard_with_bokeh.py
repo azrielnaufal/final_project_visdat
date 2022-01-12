@@ -3,6 +3,7 @@ from bokeh.models.sources import ColumnDataSource
 from bokeh.models.tools import RangeTool
 import pandas as pd
 import yfinance as yf
+from yfinance import ticker
 from datetime import date
 import numpy as np
 
@@ -10,7 +11,6 @@ from bokeh.io import curdoc
 from bokeh.models import ColumnarDataSource, Select, DataTable, TableColumn
 from bokeh.layouts import column, row 
 from bokeh.plotting import figure, show
-from yfinance import ticker
 
 # buat konstanta
 DEFAULT_TICKERS = ['AAPL', 'GOOG', 'MSFT', 'NFLX', 'TSLA','AMZN','AAPL','FB','BABA']
